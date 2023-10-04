@@ -54,16 +54,16 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jimjim/Code/cpp-repos/begin-cpp
+CMAKE_SOURCE_DIR = /Users/jimjim/Code/cpp-repos/first-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jimjim/Code/cpp-repos/begin-cpp/build
+CMAKE_BINARY_DIR = /Users/jimjim/Code/cpp-repos/first-cpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/first-cpp.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,8 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/first-cpp.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/first-cpp.dir
+
+# All Build rule for target.
+CMakeFiles/first-cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jimjim/Code/cpp-repos/first-cpp/build/CMakeFiles --progress-num=1,2 "Built target first-cpp"
+.PHONY : CMakeFiles/first-cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/first-cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimjim/Code/cpp-repos/first-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/first-cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimjim/Code/cpp-repos/first-cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/first-cpp.dir/rule
+
+# Convenience name for target.
+first-cpp: CMakeFiles/first-cpp.dir/rule
+.PHONY : first-cpp
+
+# clean rule for target.
+CMakeFiles/first-cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/clean
+.PHONY : CMakeFiles/first-cpp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

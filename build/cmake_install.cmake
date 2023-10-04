@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jimjim/Code/cpp-repos/begin-cpp
+# Install script for directory: /Users/jimjim/Code/cpp-repos/first-cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jimjim/Code/cpp-repos/begin-cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jimjim/Code/cpp-repos/first-cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

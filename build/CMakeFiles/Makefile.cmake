@@ -28,7 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
-  "/Users/jimjim/Code/cpp-repos/begin-cpp/CMakeLists.txt"
+  "/Users/jimjim/Code/cpp-repos/first-cpp/CMakeLists.txt"
   "CMakeFiles/3.27.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeSystem.cmake"
@@ -47,4 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/first-cpp.dir/DependInfo.cmake"
   )

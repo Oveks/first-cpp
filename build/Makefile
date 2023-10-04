@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jimjim/Code/cpp-repos/begin-cpp
+CMAKE_SOURCE_DIR = /Users/jimjim/Code/cpp-repos/first-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jimjim/Code/cpp-repos/begin-cpp/build
+CMAKE_BINARY_DIR = /Users/jimjim/Code/cpp-repos/first-cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimjim/Code/cpp-repos/begin-cpp/build/CMakeFiles /Users/jimjim/Code/cpp-repos/begin-cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimjim/Code/cpp-repos/first-cpp/build/CMakeFiles /Users/jimjim/Code/cpp-repos/first-cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimjim/Code/cpp-repos/begin-cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jimjim/Code/cpp-repos/first-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +116,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named first-cpp
+
+# Build rule for target.
+first-cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 first-cpp
+.PHONY : first-cpp
+
+# fast build rule for target.
+first-cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/build
+.PHONY : first-cpp/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-cpp.dir/build.make CMakeFiles/first-cpp.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... first-cpp"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
