@@ -1,10 +1,14 @@
 #include <iostream>
+#include <cmath> //imports more advanced math tools
 
 using namespace std;
 
-int main()
-{
-  // Single character variable
+void hi(string name, int num) {
+  cout << "Hello! " << name << "#" << num << endl;
+}
+
+void guide() {
+    // Single character variable
   char adj = 'a';
   // Multi-character variable
   string name = "Bob";
@@ -12,8 +16,8 @@ int main()
   int age;
   age = 21; //Another way to define variables (2 lines instead of one)
   //float and double do the same thing (integers with decimals)
-  float hour = 4.7; //more niche use cases
-  double time = 3.2; //stick with this for now
+  float hour = 4.7; //can store decimals
+  double time = 3.2; //can store more specific decimals
   bool isCool = true; //boolean value (true/false)
 
   //print text mad lib
@@ -27,6 +31,17 @@ int main()
   //.substr(starting index number, length) displays a substring of the original string
   cout <<"Hello " << name << ", it's joever ";
   cout <<"I am " << age << "!" << endl;
+
+  //Math functions are self explanatory, google more complex ones if need be.
+  cout << "Name: "; getline(cin, name); cout << name << " is cool!\n";
+  double nums[100]; cin >> nums[0]; cin >> nums[1]; cout << nums[0] + nums[1];
+}
+
+int main()
+{
+  hi("Joe", 12);
+  hi("Mama", 84);
+  hi("Rick", 37);
 
   return 0;
 }
