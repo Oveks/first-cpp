@@ -3,6 +3,18 @@
 
 using namespace std;
 
+void hi(string name, int num);
+void guide();
+
+int main()
+{
+  hi("Joe", 12);
+  hi("Mama", 84);
+  hi("Rick", 37);
+
+  return 0;
+}
+
 void hi(string name, int num) {
   cout << "Hello! " << name << "#" << num << endl;
 }
@@ -37,11 +49,3 @@ void guide() {
   double nums[100]; cin >> nums[0]; cin >> nums[1]; cout << nums[0] + nums[1];
 }
 
-int main()
-{
-  hi("Joe", 12);
-  hi("Mama", 84);
-  hi("Rick", 37);
-
-  return 0;
-}
