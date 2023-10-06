@@ -3,16 +3,24 @@
 
 using namespace std;
 
-void hi(string name, int num);
-void guide();
+void cool(){
+  bool isCool = true;
+  bool isWarm = false;
+  if(isCool || !isWarm) {
+    cout << "lol";
+//if, else if, else: && means and, || means or, ! means not
+  }
+}
 
-int main()
-{
-  hi("Joe", 12);
-  hi("Mama", 84);
-  hi("Rick", 37);
+int main(){
+
+  cool();
 
   return 0;
+}
+
+double cube (double num){
+  return num*num*num;
 }
 
 void hi(string name, int num) {
@@ -37,11 +45,11 @@ void guide() {
   cout <<" I am " << adj << " " << isCool << age << " years old!\n"; // "\n" is a line break
 
   age = 69; //redefine variables
-  name[0] = 'R'; // [x] replaces the char for specific index # (start with 0), imagine x is an integer 0 or greater
+  name[0] = 'R'; // [x] replaces the char for specific index # (start with 0)
   // Function examples, .length(), 
   //.find(string/chars, starting index) shows where word/phrase is found relative to it's index #
   //.substr(starting index number, length) displays a substring of the original string
-  cout <<"Hello " << name << ", it's joever ";
+  cout <<"Hello " << name << ", it's joe-ver ";
   cout <<"I am " << age << "!" << endl;
 
   //Math functions are self explanatory, google more complex ones if need be.
